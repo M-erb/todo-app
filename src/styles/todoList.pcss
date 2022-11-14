@@ -1,0 +1,46 @@
+.todo_list {
+  & li {
+    margin-bottom: var(--size-3);
+  }
+
+  & .todo_item {
+    background-color: transparent;
+    border: 3px solid var(--color-blue);
+    border-radius: var(--radius-md);
+    padding: var(--size-2) var(--size-3);
+
+    &:hover {
+      background-color: var(--bg-sub);
+    }
+  }
+  
+  & .todo_title_bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & .todo_title_item {
+      flex: 0 0 auto;
+
+      &.todo_title_space {
+        flex: 1 1 auto;
+
+        & h4 {
+          font-size: var(--scale-3);
+        }
+      }
+
+      &.todo_checkbox_space {
+        margin-right: var(--size-3);
+      }
+
+      &.todo_duedate_space {
+        margin: 0 var(--size-2);
+
+        & span {
+          color: var(--text-color-2);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.fieldset {
+  margin: var(--size-5) 0;
+
+  & label {
+    & .label {
+      display: block;
+      font-size: var(--scale-0);
+      font-weight: var(--weight-bold);
+      color: var(--text-color-2);
+      user-select: none;
+      order: 0;
+      transition: color 0.3s;
+    }
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    & label {
+      margin-bottom: var(--size-2);
+    }
+  }
+
+  &:only-child {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    & label {
+      margin-bottom: 0;
+    }
+  }
+}

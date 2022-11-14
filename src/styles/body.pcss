@@ -1,0 +1,56 @@
+html {
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-color);
+  font-family: "Roboto Flex", Helvetica Neue, sans-serif;
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-sm);
+  overflow-x: hidden;
+  min-height: 100vh;
+
+  &.no_Scroll {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: var(--width-xs);
+  padding: 0 var(--size-2);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 640px) {
+    & { max-width: var(--width-sm) }
+  }
+
+  @media (min-width: 768px) {
+    & { max-width: var(--width-md) }
+  }
+
+  @media (min-width: 1024px) {
+    & { max-width: var(--width-lg) }
+  }
+
+  @media (min-width: 1280px) {
+    & { max-width: var(--width-xl) }
+  }
+}
+
+.page {
+  margin: 0 auto;
+  padding: var(--size-4);
+  margin-bottom: var(--size-60);
+  max-width: var(--width-xs);
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+  @media (min-width: 768px) {
+    & { max-width: var(--width-md) }
+  }
+}

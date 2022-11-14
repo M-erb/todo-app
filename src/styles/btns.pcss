@@ -1,0 +1,36 @@
+button {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: var(--color-pink);
+  color: bar(--color-black);
+  font-weight: var(--weight-semibold);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: var(--size-2);
+
+  & .icon {
+    display: block;
+  }
+}
+
+.btn_icon {
+  background-color: var(--color-pink);
+  color: var(--color-black);
+  border: none;
+  border-radius: var(--radius-full);
+  padding: var(--size-1);
+
+  & .icon {
+    display: block;
+  }
+}
+
+.btn_inline {
+  display: flex;
+
+  & .btn_circle, & .btn {
+    flex: 0 0 auto;
+  }
+}

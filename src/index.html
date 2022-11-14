@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles.css">
+  <title>To Dos</title>
+  <meta name="description" content="Keep track of your todos">
+</head>
+<body>
+  <div class="container">
+    <div class="title_bar">
+      <h1>To Dos <button class="btn_icon js_show_info_modal" title="About this app"><i icon-name="help-circle"></i></button></h1>
+
+      <div class="">
+        <button class="btn_icon js_add_btn" title="Add a new Todo"><i icon-name="plus"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="todo_controls">
+      <div class="todo_controls_item">
+        <span>Sort by: </span>
+      </div>
+      <div class="todo_controls_item">
+        <button class="btn js_todo_sort_alpha" title="Sort todos alphabetically">Alphabetical</button>
+      </div>
+      <div class="todo_controls_item">
+        <button class="btn js_todo_sort_duedate" title="Sort todos by due dates">Due Date</button>
+      </div>
+    </div>
+    <ul class="todo_list js_todo_list"></ul>
+  </div>
+  <script src="assets/main.js"></script>
+</body>
+</html>
